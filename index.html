@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="index.js"></script>
+    <title>Task 4</title>
+</head>
+
+<body>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="container">
+            <div class="form-container">
+                <form id="form">
+                    <div class="row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="off">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <small>Error</small>
+                    </div>
+                    <div class="row">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email" autocomplete="off">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <small>Error</small>
+                    </div>
+                    <div class="row">
+                        <label for="age">Age</label>
+                        <input type="text" id="age" name="age" placeholder="Enter your age" autocomplete="off">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <small>Error</small>
+                    </div>
+
+                    <div class="row overflow">
+                        <label for="feature">Which option best describes you ?</label>
+                        <select id="feature" name="feature">
+                            <option value="student">Student</option>
+                            <option value="intern">Intern</option>
+                            <option value="professional">Professional</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <small>Error</small>
+                    </div>
+
+                    <div class="row">
+                        <label>Would you recommend GeeksforGeeks to a friend?</label><br>
+                        <div id="radio" name="radio" class="radio">
+                            <div>
+                                <input type="radio" name="recommend" value="yes">
+                                <label for="yes">Yes</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="recommend" value="no">
+                                <label for="no">No</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="recommend" value="maybe">
+                                <label for="maybe">Maybe</label>
+                            </div>
+                        </div>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <small>Error</small>
+                    </div>
+
+                    <div class="row">
+                        <label for="lang">Languages and frameworks known (Check all that apply)
+                        </label>
+                        <div id="checkbox" class="wrapper">
+                            <div class="checkbox">
+                                <div class="div">
+                                    <input type="checkbox" id="C" name="lang" value="C">
+                                    <label for="lang"> C</label><br>
+                                </div>
+                                <div class="div">
+                                    <input type="checkbox" id="C++" name="lang" value="C++">
+                                    <label for="lang"> C++</label><br>
+                                </div>
+                                <div class="div">
+
+                                    <input type="checkbox" id="C#" name="lang" value="C#">
+                                    <label for="lang"> C#</label><br>
+                                </div>
+                                <div class="div">
+
+                                    <input type="checkbox" id="Java" name="lang" value="Java">
+                                    <label for="lang"> Java</label><br>
+                                </div>
+                                <div class="div">
+
+                                    <input type="checkbox" id="Python" name="lang" value="Python">
+                                    <label for="lang"> Python</label><br>
+                                </div>
+                                <div class="div">
+                                    <input type="checkbox" id="JavaScript" name="lang" value="JavaScript">
+                                    <label for="lang"> JavaScript</label><br>
+                                </div>
+                                <div class="div">
+                                    <input type="checkbox" id="React" name="lang" value="React">
+                                    <label for="lang"> React</label><br>
+                                </div>
+                                <div class="div">
+                                    <input type="checkbox" id="Angular" name="lang" value="Angular">
+                                    <label for="lang"> Angular</label><br>
+                                </div>
+                                <div class="div">
+                                    <input type="checkbox" id="Django" name="lang" value="Django">
+                                    <label for="lang"> Django</label><br>
+                                </div>
+                                <div class="div">
+                                    <input type="checkbox" id="Spring" name="lang" value="Spring">
+                                    <label for="lang"> Spring</label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <small>Error</small>
+                    </div>
+
+
+                    <div class="row">
+                        <label for="comment">Any comment or suggestion?</label>
+                        <textarea id="comment" name="comment" autocomplete="off"></textarea>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <small>Error</small>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div><br>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
